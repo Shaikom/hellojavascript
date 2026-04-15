@@ -29,11 +29,11 @@
 <body>
     <h1>Enter Your Name</h1>
     <input type="text" id="nameInput" placeholder="Your name">
-    <button onclick="showMessag()">Submit</button>
+    <button onclick="showMessage()">Submit</button>
     <div id="message"></div>
 
     <script>
-        function showMessageeeee() {
+        function showMessage() {
             var name = document.getElementById('nameInput').value;
             if (name.trim() === '') {
                 document.getElementById('message').innerHTML = 'Please enter your name.';
