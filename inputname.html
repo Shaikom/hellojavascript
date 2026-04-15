@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Prompt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    <input type="text" id="nameInput" placeholder="Your name">
+    <button onclick="showMessage()">Submit</button>
+    <div id="message"></div>
+
+    <script>
+        function showMessage() {
+            var name = document.getElementById('nameinput').value;
+            if (name.trim() === '') {
+                document.getElementById('message').innerHTML = 'Please enter your name.';
+            } else {
+                document.getElementById('message').innerHTML = 'Thank you, ' + name + '!
+            }
+        }
+    </script>
+</body>
